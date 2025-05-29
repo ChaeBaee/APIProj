@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Rooms - Luxury Resort & Spa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">Luxury Resort</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="booking.html" class="text-gray-700 hover:text-blue-600">Book Now</a>
+                    <a href="rooms.html" class="text-gray-700 hover:text-blue-600">Rooms</a>
+                    <a href="gallery.html" class="text-gray-700 hover:text-blue-600">Gallery</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <i class="fas fa-bars text-2xl text-gray-700"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <a href="index.html" class="block py-2 px-4 text-gray-700 hover:bg-blue-50">Home</a>
+            <a href="booking.html" class="block py-2 px-4 text-gray-700 hover:bg-blue-50">Book Now</a>
+            <a href="rooms.html" class="block py-2 px-4 text-gray-700 hover:bg-blue-50">Rooms</a>
+            <a href="gallery.html" class="block py-2 px-4 text-gray-700 hover:bg-blue-50">Gallery</a>
+            <a href="contact.html" class="block py-2 px-4 text-gray-700 hover:bg-blue-50">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Rooms Header -->
+    <section class="pt-32 pb-20 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Luxurious Rooms</h1>
+                <p class="text-xl md:text-2xl">Experience comfort and elegance in every detail</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Categories -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Deluxe Room -->
+            <div class="mb-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="relative overflow-hidden rounded-lg shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                             alt="Deluxe Room" 
+                             class="w-full h-[500px] object-cover">
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Deluxe Room</h2>
+                        <p class="text-gray-600 mb-6">Experience luxury in our spacious Deluxe Room, featuring a king-size bed, private balcony, and stunning ocean views.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center text-gray-700">
+                                <i class="fas fa-bed mr-3 text-blue-600"></i>
+                                King-size bed with premium mattress
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <i class="fas fa-bath mr-3 text-blue-600"></i>
+                                Private bathroom with rain shower
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <i class="fas fa-wifi mr-3 text-blue-600"></i>
+                                High-speed WiFi
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <i class="fas fa-tv mr-3 text-blue-600"></i>
+                                55" Smart TV
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <i class="fas fa-coffee mr-3 text-blue-600"></i>
+                                Coffee maker and minibar
+                            </li>
+                        </ul>
+                        <div class="flex items-center justify-between">
+                            <p class="text-2xl font-bold text-blue-600">$299/night</p>
+                            <a href="/booking.html" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition duration-300">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Executive Suite -->
+            <div class="mb-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="md:order-2 relative overflow-hidden rounded-lg shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                             alt="Executive Suite" 
+                             class="w-full h-[500px] object-cover">
+                    </div>
+                    <div class="md:order-1">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Executive Suite</h2>
+                        <p class="text-gray-600 mb-6">Indulge in the ultimate luxury with our Executive Suite, featuring a separate living area, private balcony, and premium amenities.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center text-gray-700">
+                                <i class="fas fa-bed mr-3 text-blue-600"></i>
+                                King-size bed with memory foam mattress
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <i class="fas fa-bath mr-3 text-blue-600"></i>
+                                Jacuzzi bathroom with luxury toiletries
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <i class="fas fa-wifi mr-3 text-blue-600"></i>
+                                Premium WiFi
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <i class="fas fa-couch mr-3 text-blue-600"></i>
+                                Separate living area
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <i class="fas fa-glass-martini-alt mr-3 text-blue-600"></i>
+                                Complimentary minibar
+                            </li>
+                        </ul>
+                        <div class="flex items-center justify-between">
+                            <p class="text-2xl font-bold text-blue-600">$499/night</p>
+                            <a href="/booking.html" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition duration-300">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Presidential Suite -->
+            <div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="relative overflow-hidden rounded-lg shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                             alt="Presidential Suite" 
+                             class="w-full h-[500px] object-cover">
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Presidential Suite</h2>
+                        <p class="text-gray-600 mb-6">Experience unparalleled luxury in our Presidential Suite, featuring panoramic views, private terrace, and exclusive services.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center text-gray-700">
+                                <i class="fas fa-bed mr-3 text-blue-600"></i>
+                                Two king-size beds with premium bedding
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <i class="fas fa-bath mr-3 text-blue-600"></i>
+                                Spa bathroom with steam shower
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <i class="fas fa-wifi mr-3 text-blue-600"></i>
+                                VIP WiFi
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <i class="fas fa-umbrella-beach mr-3 text-blue-600"></i>
+                                Private terrace with ocean view
+                            </li>
+                            <li class="flex items-center text-gray-700">
+                                <i class="fas fa-concierge-bell mr-3 text-blue-600"></i>
+                                24/7 butler service
+                            </li>
+                        </ul>
+                        <div class="flex items-center justify-between">
+                            <p class="text-2xl font-bold text-blue-600">$799/night</p>
+                            <a href="/booking.html" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition duration-300">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Luxury Resort</h3>
+                    <p class="text-gray-400">Experience paradise like never before.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="booking.html" class="text-gray-400 hover:text-white">Book Now</a></li>
+                        <li><a href="rooms.html" class="text-gray-400 hover:text-white">Rooms</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-white">Gallery</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>123 Resort Way</li>
+                        <li>Paradise Island, PI 12345</li>
+                        <li>Phone: (555) 123-4567</li>
+                        <li>Email: info@luxuryresort.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Luxury Resort. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
