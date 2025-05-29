@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Luxury Resort & Spa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">Luxury Resort</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="booking.html" class="text-gray-700 hover:text-blue-600">Book Now</a>
+                    <a href="rooms.html" class="text-gray-700 hover:text-blue-600">Rooms</a>
+                    <a href="gallery.html" class="text-gray-700 hover:text-blue-600">Gallery</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <i class="fas fa-bars text-2xl text-gray-700"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <a href="index.html" class="block py-2 px-4 text-gray-700 hover:bg-blue-50">Home</a>
+            <a href="booking.html" class="block py-2 px-4 text-gray-700 hover:bg-blue-50">Book Now</a>
+            <a href="rooms.html" class="block py-2 px-4 text-gray-700 hover:bg-blue-50">Rooms</a>
+            <a href="gallery.html" class="block py-2 px-4 text-gray-700 hover:bg-blue-50">Gallery</a>
+            <a href="contact.html" class="block py-2 px-4 text-gray-700 hover:bg-blue-50">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Gallery Header -->
+    <section class="pt-32 pb-20 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Resort Gallery</h1>
+                <p class="text-xl md:text-2xl">Explore our stunning facilities and breathtaking views</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Gallery Filters -->
+            <div class="flex justify-center mb-12 space-x-4">
+                <button class="gallery-filter active" data-filter="all">All</button>
+                <button class="gallery-filter" data-filter="rooms">Rooms</button>
+                <button class="gallery-filter" data-filter="facilities">Facilities</button>
+                <button class="gallery-filter" data-filter="dining">Dining</button>
+                <button class="gallery-filter" data-filter="spa">Spa</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Room Images -->
+                <div class="gallery-item" data-category="rooms">
+                    <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Deluxe Room" 
+                         class="w-full h-64 object-cover rounded-lg cursor-pointer">
+                </div>
+                <div class="gallery-item" data-category="rooms">
+                    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Executive Suite" 
+                         class="w-full h-64 object-cover rounded-lg cursor-pointer">
+                </div>
+                <div class="gallery-item" data-category="rooms">
+                    <img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Presidential Suite" 
+                         class="w-full h-64 object-cover rounded-lg cursor-pointer">
+                </div>
+
+                <!-- Facility Images -->
+                <div class="gallery-item" data-category="facilities">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Infinity Pool" 
+                         class="w-full h-64 object-cover rounded-lg cursor-pointer">
+                </div>
+                <div class="gallery-item" data-category="facilities">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Private Beach" 
+                         class="w-full h-64 object-cover rounded-lg cursor-pointer">
+                </div>
+                <div class="gallery-item" data-category="facilities">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Fitness Center" 
+                         class="w-full h-64 object-cover rounded-lg cursor-pointer">
+                </div>
+
+                <!-- Dining Images -->
+                <div class="gallery-item" data-category="dining">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Fine Dining" 
+                         class="w-full h-64 object-cover rounded-lg cursor-pointer">
+                </div>
+                <div class="gallery-item" data-category="dining">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Restaurant" 
+                         class="w-full h-64 object-cover rounded-lg cursor-pointer">
+                </div>
+                <div class="gallery-item" data-category="dining">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Bar" 
+                         class="w-full h-64 object-cover rounded-lg cursor-pointer">
+                </div>
+
+                <!-- Spa Images -->
+                <div class="gallery-item" data-category="spa">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Spa Treatment" 
+                         class="w-full h-64 object-cover rounded-lg cursor-pointer">
+                </div>
+                <div class="gallery-item" data-category="spa">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Massage Room" 
+                         class="w-full h-64 object-cover rounded-lg cursor-pointer">
+                </div>
+                <div class="gallery-item" data-category="spa">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Sauna" 
+                         class="w-full h-64 object-cover rounded-lg cursor-pointer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden">
+        <button class="absolute top-4 right-4 text-white text-4xl" onclick="closeLightbox()">&times;</button>
+        <button class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-4xl" onclick="previousImage()">&lt;</button>
+        <button class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-4xl" onclick="nextImage()">&gt;</button>
+        <img id="lightbox-image" src="" alt="" class="max-h-[90vh] max-w-[90vw] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Luxury Resort</h3>
+                    <p class="text-gray-400">Experience paradise like never before.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="booking.html" class="text-gray-400 hover:text-white">Book Now</a></li>
+                        <li><a href="rooms.html" class="text-gray-400 hover:text-white">Rooms</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-white">Gallery</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>123 Resort Way</li>
+                        <li>Paradise Island, PI 12345</li>
+                        <li>Phone: (555) 123-4567</li>
+                        <li>Email: info@luxuryresort.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Luxury Resort. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Gallery Filter Functionality
+        const filterButtons = document.querySelectorAll('.gallery-filter');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const filter = button.dataset.filter;
+
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.dataset.category === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Lightbox Functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightbox-image');
+        const images = document.querySelectorAll('.gallery-item img');
+        let currentImageIndex = 0;
+
+        images.forEach((image, index) => {
+            image.addEventListener('click', () => {
+                currentImageIndex = index;
+                openLightbox(image.src);
+            });
+        });
+
+        function openLightbox(src) {
+            lightboxImage.src = src;
+            lightbox.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightbox.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        function previousImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            lightboxImage.src = images[currentImageIndex].src;
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            lightboxImage.src = images[currentImageIndex].src;
+        }
+
+        // Close lightbox when clicking outside the image
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('hidden')) {
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowLeft') previousImage();
+                if (e.key === 'ArrowRight') nextImage();
+            }
+        });
+    </script>
+</body>
+</html> 
